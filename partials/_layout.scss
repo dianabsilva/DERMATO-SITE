@@ -1,0 +1,455 @@
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+//BG HOME
+.bg-home{
+    position: relative;
+}
+
+.bg-home:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), #af958b), url("../assets/bg.png");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+@media screen and (max-width: 768px){
+    .bg-home:before{
+        position:absolute;
+        background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), #af958b), url("../assets/bg-mobile.png");
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        opacity: 0.9;
+    }
+}
+//--------------------
+
+//HERO--------------
+.hero{
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    p{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 25px;
+        text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    }
+    
+    h3{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 25px;
+        text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    }
+
+    .button-contact{
+        padding: 14px 28px;
+        color: $primary-dark;
+        background-color: $white-normal;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 14px 0;
+        
+    }
+
+    .button-contact:hover{
+        animation: scaleButton 0.8s alternate infinite;
+    }
+
+    @keyframes scaleButton{        
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+
+        p{
+            font-size: 18px;
+            padding: 0 14px;
+            width: 100%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+        
+        h3{
+            font-size: 18px;
+            padding: 0 14px;
+            width: 100%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero {
+        min-height: 50vh;
+        p{
+            font-size: 15px;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+        h3{
+            font-size: 17px;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+    }
+}
+
+//---------------------
+
+//ABOUT--------------
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    p{
+        text-align: center;
+        font-size: 20px;
+        text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    }
+    img{
+        max-width: 770px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 14px 0;
+        
+    } 
+.about-description{
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+} 
+}
+@media screen and (max-width: 768px){
+    .about-content{
+        min-height: 60vh;
+
+        p{
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 14px;
+            line-height: 150%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+        
+        img{
+            max-width: 768px;
+            padding: 0 14px;
+            width: 100%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about-content{
+        min-height: 50vh;
+        p{
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 14px;
+            line-height: 150%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+        img{
+            max-width: 480px;
+            padding: 0 14px;
+            width: 100%;
+            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        }
+    }
+}
+//---------------------
+//SERVICES--------------
+.services{
+    background-color: $white-normal;
+    color: $primary-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h1{
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 14px;
+    text-shadow: 0em 0em 0.2em $black-light;
+}
+
+.procedimento-info p{
+    color: $white-normal;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+}
+
+.procedimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 0 44px 34px 44px;
+}
+
+.procedimento{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px $black-light;
+
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        max-width: 354px;
+    }
+}
+
+.procedimento img:hover{
+    animation: scaleButton 0.8s alternate infinite;
+    z-index: 1;
+}
+
+.procedimento-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-normal;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px){
+
+    .procedimentos{
+        flex-direction: column;
+    }
+    .procedimento img{
+            max-width: 100%;
+    } 
+}
+
+//------------
+//TRATAMENTOS
+.tratamento{
+    background-image: url("../assets/bg-tratamento.png");
+    color: $white-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    opacity: 0.9;
+}
+
+.tratamento-content h1{
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 14px;
+    text-shadow: 0em 0em 0.2em $black-light;
+}
+
+.tratamento-content p{
+    text-align: center;
+    font-size: 19px;
+    padding-top: 24px;
+    margin-bottom: 34px;
+    justify-content: center;
+    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+}
+
+.tratamentos-info p{
+    color: $white-normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    background-color: rgba($primary-normal, 0.8);
+    border-radius: 8px;
+    position: relative;
+    left: -350px;
+}
+
+.tratamentos-info2 p{
+    color: $white-normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    background-color: rgba($primary-normal, 0.8);
+    border-radius: 8px;
+    position: relative;
+    flex-direction: column;
+    right: -350px;
+}
+@media screen and (max-width: 768px){
+    .tratamento{
+        background-image: url("../assets/bg-tratamento-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        opacity: 0.9;
+    }
+    .tratamentos-info p{
+        left: 0;
+        font-size: 25px;
+    }
+    .tratamentos-info2 p{
+        right: 0;
+        font-size: 25px;
+    }
+}
+//------------
+//FOOTER--------------
+.services h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 14px;
+    text-shadow: 0em 0em 0.1em $black-light;
+}
+
+.services p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.services iframe{
+    padding-top: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 14px;
+    color: $white-normal;
+    text-align: center;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: $white-normal;
+    size-adjust: 50%;
+}
+
+.footer-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: $primary-dark;
+    }
+}
+
+//---------
+
+//botao whats
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    left: 24px;
+    z-index: 99;
+    img{
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    right: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #23a786;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 54px;
+        }
+    }
+    
+}
+
+
