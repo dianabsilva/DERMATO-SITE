@@ -274,7 +274,6 @@ i {
 @media screen and (max-width: 768px) {
   .about-info, .about-info2 {
     flex-direction: column;
-    display: flex;
   }
 }
 .services {

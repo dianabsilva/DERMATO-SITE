@@ -200,7 +200,7 @@
     border-radius: 8px;
     position: relative;
     text-shadow: none;
-    left: -250px
+    left: -250px;
  }
 
  .about-info2 p{
@@ -223,7 +223,6 @@
 
     .about-info, .about-info2{
         flex-direction: column;
-        display: flex;
     }
 }
 //---------------------
