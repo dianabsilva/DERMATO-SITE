@@ -134,6 +134,8 @@
     background-color: $primary-normal;
     overflow: hidden;
     color: $white-normal;
+    min-height: 50vh;
+    padding: 5px 0;
 }
 
 .about-content{
@@ -141,22 +143,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14px;
+    padding: 5px;
 
     p{
         text-align: center;
         font-size: 20px;
         text-shadow: 0.1em 0.1em 0.2em $primary-dark;
     }
-    img{
-        max-width: 770px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        margin: 14px 0;
-        
-    } 
+
+     
 .about-description{
     p{
         margin-bottom: 14px;
@@ -176,12 +171,7 @@
             text-shadow: 0.1em 0.1em 0.2em $primary-dark;
         }
         
-        img{
-            max-width: 768px;
-            padding: 0 14px;
-            width: 100%;
-            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
-        }
+        
     }
 }
 
@@ -195,14 +185,39 @@
             line-height: 150%;
             text-shadow: 0.1em 0.1em 0.2em $primary-dark;
         }
-        img{
-            max-width: 480px;
-            padding: 0 14px;
-            width: 100%;
-            text-shadow: 0.1em 0.1em 0.2em $primary-dark;
-        }
+        
     }
 }
+
+.about-info p{
+    color: $primary-normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: $white-normal;
+    border-radius: 8px;
+    position: relative;
+    text-shadow: none;
+    left: -250px
+ }
+
+ .about-info2 p{
+    color: $primary-normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: $white-normal;
+    border-radius: 8px;
+    position: relative;
+    flex-direction: column;
+    text-shadow: none;
+    right: -250px;
+    top: -162px;
+ }
 //---------------------
 //SERVICES--------------
 .services{
@@ -303,6 +318,7 @@
     font-size: 38px;
     text-align: center;
     margin-bottom: 14px;
+    justify-content: center;
     text-shadow: 0em 0em 0.2em $black-light;
 }
 
@@ -315,34 +331,63 @@
     text-shadow: 0.1em 0.1em 0.2em $primary-dark;
 }
 
-.tratamentos-info p{
+.tratamentos-info{
     color: $white-normal;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
     padding: 10px;
-    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
     background-color: rgba($primary-normal, 0.8);
     border-radius: 8px;
     position: relative;
     left: -350px;
+    display: flex;
+    flex-direction: column;
+}
+.tratamentos-info:hover{
+    animation: scaleButton 0.8s alternate infinite;
+    background-color: $primary-normal;
+    color: $white-light;
 }
 
-.tratamentos-info2 p{
+@keyframes scaleButton{        
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+.tratamentos-info2{
     color: $white-normal;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
     padding: 10px;
-    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
     background-color: rgba($primary-normal, 0.8);
     border-radius: 8px;
     position: relative;
     flex-direction: column;
     right: -350px;
+    display: flex;
 }
+.tratamentos-info2:hover{
+    animation: scaleButton 0.8s alternate infinite;
+    background-color: $primary-normal;
+    color: $white-light;
+}
+
+@keyframes scaleButton{        
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
 @media screen and (max-width: 768px){
     .tratamento{
         background-image: url("../assets/bg-tratamento-mobile.png");
@@ -351,12 +396,15 @@
         background-position: 50% 0;
         opacity: 0.9;
     }
-    .tratamentos-info p{
+    .tratamentos-info{
         left: 0;
-        font-size: 25px;
+        font-size: 15px;
     }
-    .tratamentos-info2 p{
+    .tratamentos-info2{
         right: 0;
+        font-size: 15px;
+    }
+    .tratamento-content h1{
         font-size: 25px;
     }
 }
