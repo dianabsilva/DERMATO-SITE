@@ -218,6 +218,14 @@
     right: -250px;
     top: -162px;
  }
+
+ @media screen and (max-width: 768px){
+
+    .about-info, .about-info2{
+        flex-direction: column;
+        display: flex;
+    }
+}
 //---------------------
 //SERVICES--------------
 .services{

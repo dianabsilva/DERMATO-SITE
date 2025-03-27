@@ -271,6 +271,12 @@ i {
   top: -162px;
 }
 
+@media screen and (max-width: 768px) {
+  .about-info, .about-info2 {
+    flex-direction: column;
+    display: flex;
+  }
+}
 .services {
   background-color: #f4f9f4;
   color: #af958b;
