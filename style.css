@@ -278,11 +278,13 @@ i {
   .about-info p {
     left: 0;
     font-size: 15px;
+    border-radius: 8px;
   }
   .about-info2 p {
     right: 0;
-    bottom: 0;
+    top: 0;
     font-size: 15px;
+    border-radius: 8px;
   }
 }
 .services {
