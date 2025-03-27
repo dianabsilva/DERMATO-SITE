@@ -272,11 +272,11 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  .about-info {
+  .about-info p {
     left: 0;
     font-size: 15px;
   }
-  .about-info2 {
+  .about-info2 p {
     right: 0;
     font-size: 15px;
   }
