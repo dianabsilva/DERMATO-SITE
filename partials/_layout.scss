@@ -201,6 +201,8 @@
     position: relative;
     text-shadow: none;
     left: -250px;
+    display: flex;
+    flex-direction: column;
  }
 
  .about-info2 p{
@@ -213,10 +215,11 @@
     background-color: $white-normal;
     border-radius: 8px;
     position: relative;
-    flex-direction: column;
     text-shadow: none;
     right: -250px;
     top: -162px;
+    display: flex;
+    flex-direction: column;
  }
 
  @media screen and (max-width: 768px){
