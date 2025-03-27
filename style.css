@@ -272,8 +272,13 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  .about-info, .about-info2 {
-    flex-direction: column;
+  .about-info {
+    left: 0;
+    font-size: 15px;
+  }
+  .about-info2 {
+    right: 0;
+    font-size: 15px;
   }
 }
 .services {
