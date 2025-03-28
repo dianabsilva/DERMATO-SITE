@@ -428,22 +428,52 @@
 }
 //------------
 //FOOTER--------------
-.services h3{
+.endereco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-normal;
+    color: $primary-normal;
+    gap: 14px;
+    padding: 14px;
+
+}
+.endereco-info h3{
     text-transform: uppercase;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 14px;
-    text-shadow: 0em 0em 0.1em $black-light;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(48, 47, 47);
+    text-align: right;
+    
 }
 
-.services p{
-    text-align: center;
-    font-size: 15px;
-    line-height: 150%;
+hr.solid {
+    border-top: 1px solid $primary-light;
+    border: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: $primary-light;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
 }
 
-.services iframe{
+.endereco-info p{
+    font-size: 14px;
+    line-height: 100%;
+    padding-bottom: 10px;
+    text-align: right;
+    color: rgb(48, 47, 47);
+}
+
+.endereco iframe{
     padding-top: 0;
+    border-radius: 8px;
+    border-color: $primary-normal;
+    border-width: 2px;
+    border-style: solid;
+    width: 500px;
+    height: 300px;
+    max-width: 570px;
 }
 
 .footer{
@@ -453,22 +483,16 @@
     justify-content: center;
     padding: 10px 0;
     gap: 14px;
-    color: $white-normal;
     text-align: center;
+    color: $primary-normal;
+    background-color: $white-normal;
 }
 
-.footer-icons{
-    display: flex;
-    gap: 8px;
-    color: $white-normal;
-    size-adjust: 50%;
-}
-
-.footer-icons a:hover{
-    i{
-        animation: translateY 0.8s infinite alternate;
-        color: $primary-dark;
-    }
+.footer-content p{
+    font-size: 13px;
+    line-height: 150%;
+    color: $primary-dark;
+    padding-bottom: 14px;
 }
 
 //---------
