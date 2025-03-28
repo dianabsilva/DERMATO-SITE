@@ -301,7 +301,7 @@ i {
   text-transform: uppercase;
   font-size: 38px;
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 50px;
   text-shadow: 0em 0em 0.2em #bebebe;
 }
 
@@ -352,6 +352,9 @@ i {
 @media screen and (max-width: 768px) {
   .procedimentos {
     flex-direction: column;
+  }
+  .services-content h1 {
+    font-size: 30px;
   }
   .procedimento img {
     max-width: 100%;
