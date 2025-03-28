@@ -45,12 +45,12 @@
 .hero{
     color: $white-normal;
     min-height: 80vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 14px;
+    margin-bottom: -30px;
 
     p{
         text-align: center;
@@ -66,6 +66,7 @@
         max-width: 940px;
         font-size: 25px;
         text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+        
     }
 
     .button-contact{
@@ -165,7 +166,7 @@
 
         p{
             text-align: center;
-            font-size: 15px;
+            font-size: 16px;
             margin-bottom: 14px;
             line-height: 150%;
             text-shadow: 0.1em 0.1em 0.2em $primary-dark;
@@ -246,6 +247,7 @@
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
+    margin-top: -100px;
 }
 
 .services-content h1{
@@ -259,10 +261,10 @@
 .procedimento-info p{
     color: $white-normal;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
-    padding: 10px;
-    text-shadow: 0.1em 0.1em 0.2em $primary-dark;
+    margin-top: 10px;
+    padding: 7px;
 }
 
 .procedimentos{
@@ -303,17 +305,24 @@
 }
 
 @media screen and (max-width: 768px){
+    .services{
+        margin-top: 0;
+    }
 
     .procedimentos{
         flex-direction: column;
+        max-width: 350px;
     }
 
     .services-content h1{
         font-size: 30px;
     }
     .procedimento img{
-            max-width: 100%;
+            max-width: 350px;
     } 
+    .procedimento-info p{
+        font-size: 16px;
+    }
 }
 
 //------------

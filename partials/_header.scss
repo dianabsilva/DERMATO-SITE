@@ -51,6 +51,7 @@ i{
     align-items: center;
     justify-content: center;
     margin-top: 14px;
+    margin-left: 80px;
 }
 
 @media screen and (max-width: 768px){
@@ -68,6 +69,7 @@ i{
     .header-logo img{
         width: 400px;
         margin-top: 46px;
+        margin-right: 80px;
     }
 
     .header-button{

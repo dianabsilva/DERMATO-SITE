@@ -56,6 +56,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 14px;
+  margin-left: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,6 +73,7 @@ i {
   .header-logo img {
     width: 400px;
     margin-top: 46px;
+    margin-right: 80px;
   }
   .header-button {
     display: none;
@@ -126,6 +128,7 @@ i {
   align-items: center;
   justify-content: center;
   padding: 14px;
+  margin-bottom: -30px;
 }
 .hero p {
   text-align: center;
@@ -223,7 +226,7 @@ i {
   }
   .about-content p {
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 14px;
     line-height: 150%;
     text-shadow: 0.1em 0.1em 0.2em #7c6a64;
@@ -295,6 +298,7 @@ i {
   align-items: center;
   justify-content: center;
   padding: 54px 14px;
+  margin-top: -100px;
 }
 
 .services-content h1 {
@@ -308,10 +312,10 @@ i {
 .procedimento-info p {
   color: #f4f9f4;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 10px;
-  padding: 10px;
-  text-shadow: 0.1em 0.1em 0.2em #7c6a64;
+  margin-top: 10px;
+  padding: 7px;
 }
 
 .procedimentos {
@@ -350,14 +354,21 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .services {
+    margin-top: 0;
+  }
   .procedimentos {
     flex-direction: column;
+    max-width: 350px;
   }
   .services-content h1 {
     font-size: 30px;
   }
   .procedimento img {
-    max-width: 100%;
+    max-width: 350px;
+  }
+  .procedimento-info p {
+    font-size: 16px;
   }
 }
 .tratamento {
