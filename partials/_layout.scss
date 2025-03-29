@@ -328,7 +328,7 @@
 //------------
 //TRATAMENTOS
 .tratamento{
-    background-image: url("../assets/bg-tratamento.png");
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.12), #030303), url("../assets/bg-tratamento.png");
     color: $white-normal;
     display: flex;
     flex-direction: column;
@@ -338,10 +338,11 @@
     left: 0;
     top: 0;
     z-index: -1;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% -130px;
     opacity: 0.9;
+    min-height: 50vh;
 }
 
 .tratamento-content h1{
@@ -356,8 +357,9 @@
 .tratamento-content p{
     text-align: center;
     font-size: 19px;
-    padding-top: 24px;
+    padding: 10px;
     margin-bottom: 34px;
+    max-width: 940px;
     justify-content: center;
     text-shadow: 0.1em 0.1em 0.2em $primary-dark;
 }
@@ -366,13 +368,13 @@
     color: $white-normal;
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: rgba($primary-normal, 0.8);
+    background-color: rgba($primary-dark, 0.3);
     border-radius: 8px;
     position: relative;
-    left: -350px;
+    left: -200px;
     display: flex;
     flex-direction: column;
 }
@@ -394,14 +396,15 @@
     color: $white-normal;
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: rgba($primary-normal, 0.8);
+    background-color: rgba($primary-dark, 0.3);
     border-radius: 8px;
     position: relative;
     flex-direction: column;
-    right: -350px;
+    right: -200px;
+    top: -255px;
     display: flex;
 }
 .tratamentos-info2:hover{
@@ -421,22 +424,29 @@
 
 @media screen and (max-width: 768px){
     .tratamento{
-        background-image: url("../assets/bg-tratamento-mobile.png");
+        background-image: linear-gradient(to bottom, (8, 8, 8, 0.12), #030303), url("../assets/bg-tratamento-mobile.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 0;
         opacity: 0.9;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
     }
     .tratamentos-info{
         left: 0;
-        font-size: 15px;
+        font-size: 20px;
     }
     .tratamentos-info2{
         right: 0;
-        font-size: 15px;
+        font-size: 20px;
+        top: 0;
     }
     .tratamento-content h1{
         font-size: 30px;
+    }
+    .tratamento-content p{
+        font-size: 17px;
     }
 }
 //------------
@@ -448,8 +458,10 @@
     background-color: $white-normal;
     color: $primary-normal;
     gap: 14px;
-    padding: 14px;
-
+    padding: 14px 14px;
+    margin-top: -250px;
+    z-index: 1;
+    position: relative;
 }
 .endereco-info h3{
     text-transform: uppercase;
@@ -491,7 +503,8 @@ hr.solid {
 
 @media screen and (max-width: 768px){
     .endereco{
-        flex-direction: column;;
+        flex-direction: column;
+        margin-top: 0;
     }
 
     .endereco-info h3{
