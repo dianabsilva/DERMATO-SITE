@@ -408,6 +408,7 @@
     display: flex;
 }
 .tratamentos-info2 p:hover{
+    animation: scaleButton 0.8s alternate infinite;
     background-color: $primary-normal;
     color: $white-light;
 }

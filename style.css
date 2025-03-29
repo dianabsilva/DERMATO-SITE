@@ -454,6 +454,7 @@ i {
 }
 
 .tratamentos-info2 p:hover {
+  animation: scaleButton 0.8s alternate infinite;
   background-color: #af958b;
   color: #fdfcfc;
 }
