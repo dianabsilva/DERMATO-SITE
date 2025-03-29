@@ -408,7 +408,7 @@ i {
   text-shadow: 0.1em 0.1em 0.2em #7c6a64;
 }
 
-.tratamentos-info {
+.tratamentos-info p {
   color: #f4f9f4;
   text-transform: uppercase;
   text-align: center;
@@ -423,7 +423,7 @@ i {
   flex-direction: column;
 }
 
-.tratamentos-info:hover {
+.tratamentos-info p:hover {
   animation: scaleButton 0.8s alternate infinite;
   background-color: #af958b;
   color: #fdfcfc;
@@ -437,7 +437,7 @@ i {
     transform: scale(1.07);
   }
 }
-.tratamentos-info2 {
+.tratamentos-info2 p {
   color: #f4f9f4;
   text-transform: uppercase;
   text-align: center;
@@ -453,20 +453,11 @@ i {
   display: flex;
 }
 
-.tratamentos-info2:hover {
-  animation: scaleButton 0.8s alternate infinite;
+.tratamentos-info2 p:hover {
   background-color: #af958b;
   color: #fdfcfc;
 }
 
-@keyframes scaleButton {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.07);
-  }
-}
 @media screen and (max-width: 768px) {
   .tratamento {
     background-image: linear-gradient(to bottom, 8, 8, 8, 0.12, #030303), url("../assets/bg-tratamento-mobile.png");
@@ -478,11 +469,11 @@ i {
     display: flex;
     flex-direction: column;
   }
-  .tratamentos-info {
+  .tratamentos-info p {
     left: 0;
     font-size: 20px;
   }
-  .tratamentos-info2 {
+  .tratamentos-info2 p {
     right: 0;
     font-size: 20px;
     top: 0;
@@ -525,12 +516,20 @@ hr.solid {
   margin-bottom: 10px;
 }
 
-.endereco-info p {
-  font-size: 14px;
+.endereco-info h4 {
+  font-size: 18px;
   line-height: 100%;
   padding-bottom: 10px;
   text-align: right;
   color: rgb(48, 47, 47);
+}
+
+.endereco-info p {
+  font-size: 15px;
+  line-height: 100%;
+  padding-bottom: 10px;
+  text-align: right;
+  color: rgb(63, 63, 63);
 }
 
 .endereco iframe {
@@ -552,6 +551,10 @@ hr.solid {
   .endereco-info h3 {
     text-align: center;
     font-size: 20px;
+  }
+  .endereco-info h4 {
+    text-align: right;
+    font-size: 15px;
   }
   .endereco-info p {
     text-align: right;
