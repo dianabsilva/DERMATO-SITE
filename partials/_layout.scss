@@ -412,6 +412,15 @@
     color: $white-light;
 }
 
+@keyframes scaleButton{        
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
 @media screen and (max-width: 768px){
     .tratamento{
         background-image: linear-gradient(to bottom, (8, 8, 8, 0.12), #030303), url("../assets/bg-tratamento-mobile.png");
