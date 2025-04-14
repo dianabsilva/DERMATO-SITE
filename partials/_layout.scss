@@ -612,12 +612,41 @@ hr.solid {
     align-items: center;
     justify-content: center;
     gap: 14px;
-    padding: 14px 14px;
+    padding: 54px 14px;
     margin-top: -100px;
     background-color: $white-normal;
+    background-position: 100% -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $primary-dark;
-    z-index: 1;
-    position: relative;
+    left: 0;
+    z-index: -1;
+}
+.treatments-content h1{
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-shadow: 0em 0em 0.2em $black-light;
+}
+
+@media screen and (max-width: 768px){
+    .treatments{
+        margin-top: 0;
+        background-color: $white-normal;
+        background-size: 768px 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .treatments-content h1{
+        font-size: 33px;
+        
+    }
+    
 }
 
 .intradermocapilar {
@@ -640,13 +669,19 @@ hr.solid {
 @media screen and (max-width: 768px){
     .intradermocapilar{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
+        background-color: $white-normal;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
+        
     }
 }
 
@@ -670,12 +705,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .escleroterapia{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -700,12 +739,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .peeling{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -730,12 +773,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .sinais{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -760,12 +807,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .blefaroplastia{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -790,12 +841,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .otoplastia{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -820,12 +875,16 @@ hr.solid {
 @media screen and (max-width: 768px){
     .lobuloplastia{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
 }
@@ -850,34 +909,32 @@ hr.solid {
 @media screen and (max-width: 768px){
     .lip-lift{
         flex-direction: column;
+        position: relative;
         justify-items: center;
         align-items: center;
         margin-top: 0;
+        max-width: 100%;
         img{
-            width: 450px;
-            height: 300px;
+            justify-content: center;
+            max-width: 300px;
+            height: 100%;
+            margin-right: 5px;
         }
     }
     
 }
-.treatments-content h1{
-    text-transform: uppercase;
-    font-size: 38px;
-    text-align: center;
-    margin-bottom: 50px;
-    text-shadow: 0em 0em 0.2em $black-light;
-}
+
 
 .treatment-info h3{
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: $primary-normal;
 }
 
 .treatment-info p{
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     line-height: 150%;
     color: rgb(44, 43, 43);
@@ -886,12 +943,18 @@ hr.solid {
 
 @media screen and (max-width: 768px){
     .treatment-info p{
+        flex-direction: column;
+        margin-top: 0;
+        max-width: 100%;
         font-size: 16px;
         text-align: center;
+        margin-right: 5px;
     }
     .treatment-info h3{
         text-align: center;
         justify-content: center;
         font-size: 25px;
+        margin-right: 5px;
     }
 }
+
