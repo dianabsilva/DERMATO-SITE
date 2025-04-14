@@ -79,6 +79,10 @@ i {
     display: none;
   }
 }
+.html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -408,7 +412,7 @@ i {
   text-shadow: 0.1em 0.1em 0.2em #7c6a64;
 }
 
-.tratamentos-info p {
+.tratamentos-info a {
   color: #f4f9f4;
   text-transform: uppercase;
   text-align: center;
@@ -423,7 +427,7 @@ i {
   flex-direction: column;
 }
 
-.tratamentos-info p:hover {
+.tratamentos-info a:hover {
   animation: scaleButton 0.8s alternate infinite;
   background-color: #af958b;
   color: #fdfcfc;
@@ -437,7 +441,7 @@ i {
     transform: scale(1.07);
   }
 }
-.tratamentos-info2 p {
+.tratamentos-info2 a {
   color: #f4f9f4;
   text-transform: uppercase;
   text-align: center;
@@ -453,7 +457,7 @@ i {
   display: flex;
 }
 
-.tratamentos-info2 p:hover {
+.tratamentos-info2 a:hover {
   animation: scaleButton 0.8s alternate infinite;
   background-color: #af958b;
   color: #fdfcfc;
@@ -478,11 +482,11 @@ i {
     display: flex;
     flex-direction: column;
   }
-  .tratamentos-info p {
+  .tratamentos-info a {
     left: 0;
     font-size: 20px;
   }
-  .tratamentos-info2 p {
+  .tratamentos-info2 a {
     right: 0;
     font-size: 20px;
     top: 0;
@@ -629,6 +633,287 @@ hr.solid {
 @media screen and (max-width: 768px) {
   .btn-whatsapp img {
     max-width: 54px;
+  }
+}
+.treatments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px 14px;
+  margin-top: -100px;
+  background-color: #f4f9f4;
+  color: #7c6a64;
+  z-index: 1;
+  position: relative;
+}
+
+.intradermocapilar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.intradermocapilar img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .intradermocapilar {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .intradermocapilar img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.escleroterapia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.escleroterapia img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .escleroterapia {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .escleroterapia img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.peeling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.peeling img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .peeling {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .peeling img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.sinais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.sinais img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .sinais {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .sinais img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.blefaroplastia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.blefaroplastia img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .blefaroplastia {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .blefaroplastia img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.otoplastia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.otoplastia img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .otoplastia {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .otoplastia img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.lobuloplastia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.lobuloplastia img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .lobuloplastia {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .lobuloplastia img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.lip-lift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f4f9f4;
+  flex: 1;
+}
+.lip-lift img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 350px;
+  max-width: 570px;
+  box-shadow: 0px 0px 10px #bebebe;
+}
+
+@media screen and (max-width: 768px) {
+  .lip-lift {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .lip-lift img {
+    width: 450px;
+    height: 300px;
+  }
+}
+.treatments-content h1 {
+  text-transform: uppercase;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 0em 0em 0.2em #bebebe;
+}
+
+.treatment-info h3 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #af958b;
+}
+
+.treatment-info p {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 150%;
+  color: rgb(44, 43, 43);
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .treatment-info p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .treatment-info h3 {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
   }
 }
 body {
