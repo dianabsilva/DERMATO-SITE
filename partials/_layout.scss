@@ -1,5 +1,16 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .html {
     scroll-behavior: smooth;
+    }
+
+.body {
+    min-height: 100vh;
+    max-width: 1240px;
+    margin: 0 auto;
     }
 
 .container{
@@ -620,7 +631,10 @@ hr.solid {
     background-size: cover;
     color: $primary-dark;
     left: 0;
+    right: 0;
     z-index: -1;
+    max-width: 100%;
+    overflow: hidden;
 }
 .treatments-content h1{
     text-transform: uppercase;
