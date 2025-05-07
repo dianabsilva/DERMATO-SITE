@@ -687,8 +687,9 @@
 
 @media screen and (max-width: 768px){
     .wrapper{
-        margin: 0 10px 25px;
+        margin: 0 10px 10px;
         width: 350px;
+        overflow: hidden;
     }
     .card .card-footer .card-button{
         font-size: 0.65rem;
