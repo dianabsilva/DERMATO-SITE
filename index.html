@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linking Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="style.css"/>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -39,20 +41,16 @@
                     <ul>
                         <li><a href="https://clinicajanainaseabra.com.br/" target="_top">INÍCIO</a></li>
                         <li><a href="./#about">SOBRE A CLÍNICA</a></li>
-                        <li class="drop-hover"><a href="#tratamento">TRATAMENTOS&nbsp; <i class="fa-solid fa-caret-down"></i></a>
-                            <div class="drop">
-                                <a href="./tratamentos.html#intradermocapilar">Intradermocapilar</a>
-                                <a href="./tratamentos.html#escleroterapia">Escleroterapia</a>
-                                <a href="./tratamentos.html#peeling">Peeling Químico</a>
-                                <a href="./tratamentos.html#sinais">Remoção de Sinais</a>
-                                <a href="./tratamentos.html#blefaroplastia">Blefaroplastia</a>
-                                <a href="./tratamentos.html#otoplastia">Otoplastia</a>
-                                <a href="./tratamentos.html#lobuloplastia">Lobuloplastia</a>
-                                <a href="./tratamentos.html#lip-lift">Lip Lift</a>
-                            </div>
+                        <li><a href="#tratamento">TRATAMENTOS</a>
                         </li>
                         <li><a href="./#endereco">ENDEREÇO</a></li>
-                        <li><a href="./#contato">CONTATO</a></li>
+                        <li class="drop-hover"><a href="#">REDES SOCIAIS&nbsp; <i class="fa-solid fa-caret-down"></i></a>
+                            <div class="drop">
+                                <a href="https://www.instagram.com/clinicajanainaseabra/" target="_blank">Instagram</a>
+                                <a href="https://www.facebook.com/janaina.amaral.56" target="_blank">facebook</a>
+                                <a href="https://www.tiktok.com/@clnica.janana.sea" target="_blank">tik tok</a>
+                            </div>
+                        </li>
                     </ul>
             </div>
             </nav>
@@ -107,49 +105,49 @@
         
     </div>
     <!--ABOUT-->
+    <div id="about"></div>
     <section class="about">
-        <div id="about">
-        <div class="container about-content">
-            <div class="about-description" 
-            data-aos="zoom-out-left" data-aos-delay="200">
+        
+        <div class="container about-content" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-description" >
                 <p>
                     Bem-vindo à <strong>Clínica Janaina Seabra</strong>, onde unimos ciência e cuidado para oferecer tratamentos dermatológicos de alta qualidade, <strong>focados na saúde e beleza da sua pele</strong>. Com uma médica especialista em dermatologia, nossa clínica proporciona serviços de excelência, com atendimento 
                     personalizado e humanizado para suas necessidades. 
                 </p>
             </div>
         <section>
-            <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-info">
                 <p><strong>Tratamentos para doenças de pele</strong></p>
             </div>
     
-            <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-info">
                 <p><strong>Procedimentos estéticos</strong></p>
             </div>
     
-            <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-info">
                 <p><strong>Remoção de sinais</strong></p>
             </div>
     
-            <div class="about-info2" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-info2">
                 <p><strong>Rejuvenescimento facial</strong></p>
             </div>
     
-            <div class="about-info2" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-info2" >
                 <p><strong>Cuidados dermatológicos preventivos</strong></p>
             </div>
     
-            <div class="about-info2" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-info2">
                 <p><strong>Cirurgias dermatológicas menores</strong></p>
             </div>
         </section>
             </div>
-        </div>
+        
     </div>
     </section>
     <!--SERVICES-->
     <section class="services">
         <div class="services-content container">
-            <h1>Por que escolher nossa clínica?</h1>
+            <h1><strong>Por que escolher nossa clínica?</strong></h1>
         </div>
         <section class="procedimentos" data-aos="fade-up" data-aos-delay="200">
             <div class="procedimento">
@@ -196,51 +194,195 @@
     </section>
 
 <!---- TRATAMENTOS-->
-<section class="tratamento">
-    <div id="tratamento"></div>
+<div id="tratamento"></div>
+<section class="tratamentos">
     <div class="tratamento-content container">
         <h1>Tratamentos e Cirurgias Dermatológicas</h1>
         <p>
             Oferecemos <strong>tratamentos especializados</strong> para cuidar da saúde e beleza da sua pele, sempre com <strong>resultados seguros e eficazes</strong>. Escolha o procedimento ideal para você e agende sua consulta.
         </p>
     </div>
-    <section class="tratamentos">
-    <div class="tratamentos-info">
-        <a href="./tratamentos.html#intradermocapilar" class="tratamentos-info" target="_top">
-            <strong>Intradermocapilar</strong>
-        </a> 
+    <div class="carrossel container swiper">
+        <div class="wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-image">
+                        <img src="assets/intradermocapilar.jpg" 
+                                alt="Intradermocapilar" />
+                        <p class="card-tag">Intradermocapilar</p>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Intradermocapilar</h3>
+                        <p class="card-text">Tratamento para queda de cabelo e calvície.</p>
+                        <div class="card-footer">
+                            <div class="card-profile">
+                                <img src="assets/medica.png" alt="">
+                                <div class="card-profile-info">
+                                    <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                    <span class="card-profile-role">CREMEPE 34944</span>
+                                </div>
+                            </div>
+                                <a href="./tratamentos.html#intradermocapilar" class="card-button">Saiba mais</a>
+                        </div>
+                </div>
+                </div>
+                <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="assets/escleroterapia.jpg" 
+                                    alt="Escleroterapia" />
+                            <p class="card-tag">Escleroterapia</p>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Escleroterapia</h3>
+                            <p class="card-text">Tratamento de vasinhos ou varizes.</p>
+                            <div class="card-footer">
+                                <div class="card-profile">
+                                    <img src="assets/medica.png" alt="">
+                                    <div class="card-profile-info">
+                                        <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                        <span class="card-profile-role">CREMEPE 34944</span>
+                                    </div>
+                                </div>
+                                    <a href="./tratamentos.html#escleroterapia" class="card-button">Saiba mais</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="assets/peeling.jpg" 
+                                        alt="Peeling" />
+                                <p class="card-tag">Peeling Químico</p>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Peeling Químico</h3>
+                                <p class="card-text">Renovação celular. Melhora a textura da pele, reduz manchas, cicatrizes de acne e sinais de envelhecimento, como rugas.</p>
+                                <div class="card-footer">
+                                    <div class="card-profile">
+                                        <img src="assets/medica.png" alt="">
+                                        <div class="card-profile-info">
+                                            <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                            <span class="card-profile-role">CREMEPE 34944</span>
+                                        </div>
+                                    </div>
+                                        <a href="./tratamentos.html#peeling" class="card-button">Saiba mais</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img src="assets/sinais.jpg" 
+                                            alt="ISinais" />
+                                    <p class="card-tag">Remoção de Sinais</p>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Remoção de Sinais</h3>
+                                    <p class="card-text">Remoção de Sinais Benignos e Malignos.</p>
+                                    <div class="card-footer">
+                                        <div class="card-profile">
+                                            <img src="assets/medica.png" alt="">
+                                            <div class="card-profile-info">
+                                                <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                                <span class="card-profile-role">CREMEPE 34944</span>
+                                            </div>
+                                        </div>
+                                            <a href="./tratamentos.html#sinais" class="card-button">Saiba mais</a>
+                                    </div>
+                            </div>
+                </div>
+                <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img src="assets/blefaroplastia.jpg" 
+                                            alt="Blefaroplastia" />
+                                    <p class="card-tag">Blefaroplastia</p>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Blefaroplastia</h3>
+                                    <p class="card-text">Procedimento cirúrgico estético que visa corrigir problemas nas pálpebras, como excesso de pele, bolsas de gordura e flacidez.</p>
+                                    <div class="card-footer">
+                                        <div class="card-profile">
+                                            <img src="assets/medica.png" alt="">
+                                            <div class="card-profile-info">
+                                                <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                                <span class="card-profile-role">CREMEPE 34944</span>
+                                            </div>
+                                        </div>
+                                            <a href="./tratamentos.html#blefaroplastia" class="card-button">Saiba mais</a>
+                                    </div>
+                            </div>
+                </div>
+                <div class="card swiper-slide">
+                                    <div class="card-image">
+                                        <img src="assets/otoplastia.jpg" 
+                                                alt="Otoplastia" />
+                                        <p class="card-tag">Otoplastia</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">Otoplastia</h3>
+                                        <p class="card-text">Correção de deformidades ou protrusões das orelhas, proporcionando um contorno mais harmonioso e proporcional ao rosto. </p>
+                                        <div class="card-footer">
+                                            <div class="card-profile">
+                                                <img src="assets/medica.png" alt="">
+                                                <div class="card-profile-info">
+                                                    <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                                    <span class="card-profile-role">CREMEPE 34944</span>
+                                                </div>
+                                            </div>
+                                                <a href="./tratamentos.html#otoplastia" class="card-button">Saiba mais</a>
+                                        </div>
+                                </div>
+                </div>
+                <div class="card swiper-slide">
+                                    <div class="card-image">
+                                        <img src="assets/lobuloplastia.webp" 
+                                                alt="Lobuloplastia" />
+                                        <p class="card-tag">Lobuloplastia</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">Lobuloplastia</h3>
+                                        <p class="card-text">Repara ou remodela o lóbulo da orelha, geralmente em casos de lobos esticados ou rasgados.</p>
+                                        <div class="card-footer">
+                                            <div class="card-profile">
+                                                <img src="assets/medica.png" alt="">
+                                                <div class="card-profile-info">
+                                                    <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                                    <span class="card-profile-role">CREMEPE 34944</span>
+                                                </div>
+                                            </div>
+                                                <a href="./tratamentos.html#lobuloplastia" class="card-button">Saiba mais</a>
+                                        </div>
+                                </div>
+                </div>
+                <div class="card swiper-slide">
+                                    <div class="card-image">
+                                        <img src="assets/lip-lift.jpg" 
+                                                alt="Lip-Lift" />
+                                        <p class="card-tag">Lip Lift</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">Lip Lift</h3>
+                                        <p class="card-text">Aumenta a projeção dos lábios e melhora a definição do contorno labial, proporcionando um sorriso mais jovem e atraente.</p>
+                                        <div class="card-footer">
+                                            <div class="card-profile">
+                                                <img src="assets/medica.png" alt="">
+                                                <div class="card-profile-info">
+                                                    <span class="card-profile-name">Dra. Janaína Seabra</span>
+                                                    <span class="card-profile-role">CREMEPE 34944</span>
+                                                </div>
+                                            </div>
+                                                <a href="./tratamentos.html#lip-lift" class="card-button">Saiba mais</a>
+                                        </div>
+                                </div>
+                </div>
+            </div>
 
-        <a href="./tratamentos.html#escleroterapia" class="tratamentos-info" target="_top">
-            <strong>Escleroterapia</strong>
-        </a>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
 
-        <a href="./tratamentos.html#peeling" class="tratamentos-info" target="_top">
-            <strong>Peeling Químico</strong>
-        </a>
-
-        <a href="./tratamentos.html#sinais" class="tratamentos-info" target="_top">
-            <strong>Remoção de Sinais</strong>
-        </a>
-
-       </div>
-       <div class="tratamentos-info2">
-        <a href="./tratamentos.html#blefaroplastia" class="tratamentos-info2" target="_top">
-            <strong>Blefaroplastia</strong>
-        </a>
-
-        <a href="./tratamentos.html#otoplastia" class="tratamentos-info2" target="_top">
-            <strong>Otoplastia</strong>
-        </a>
-
-        <a href="./tratamentos.html#lobuloplastia" class="tratamentos-info2" target="_top">
-            <strong>Lobuloplastia</strong>
-        </a>
-
-        <a href="./tratamentos.html#lip-lift" class="tratamentos-info2" target="_top">
-            <strong>Lip Lift</strong>
-        </a>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-</section>
+    </div>
 </section>
 <!---- FOOTER-->
 <div class="footer-container">
@@ -268,7 +410,7 @@
 
 <div class ="contato">
     <div id="contato"></div>
-        <img src="assets/logo-dark.png"
+        <img src="assets/logo-gold.png"
             alt="Logo da clinica"/>
         <p><strong> </strong></p>
         <a href="https://www.instagram.com/clinicajanainaseabra/" target="_blank">
@@ -323,5 +465,9 @@
         <span class="tooltip-text">Agende seu horário</span>
 </a>
     <script src="script.js"></script>
+    
+    <!---Linking Swiper Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,8 +61,8 @@ header {
 }
 
 .bottom-header nav ul li a {
-  color: #7c6a64;
   background-color: #f4f9f4;
+  color: #8c5e2a;
   width: 100%;
   padding: 20px 40px;
   text-transform: uppercase;
@@ -72,11 +73,21 @@ header {
 }
 
 .bottom-header nav ul li a:hover {
-  background-color: #7c6a64;
   color: #f4f9f4;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.37);
+  background: linear-gradient(45deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  animation: degrade 10s linear infinite alternate;
 }
 
+@keyframes degrade {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 .drop-hover {
   position: relative;
 }
@@ -87,7 +98,8 @@ header {
 
 .drop-hover .drop {
   position: absolute;
-  background-color: #7c6a64;
+  background-color: #f4f9f4;
+  color: #8c5e2a;
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -100,7 +112,7 @@ header {
 }
 
 .drop-hover:hover .drop {
-  height: 472px;
+  height: 177px;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,20 +133,17 @@ header {
     background-color: transparent;
     color: #f4f9f4;
   }
-  .bottom-header nav ul li a:hover {
-    background-color: #f4f9f4;
-    color: #7c6a64;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.37);
-  }
   .drop-hover .drop {
     height: 0;
   }
   .drop-hover:hover .drop {
     display: flex;
     flex-direction: column;
-    height: 440px;
-    font-size: 11px;
+    height: 174px;
+    font-size: 14px;
     text-align: left;
+    background: #7c6a64;
+    z-index: 1;
   }
   .drop-hover .fa-solid {
     color: #f4f9f4;
@@ -225,6 +234,9 @@ i {
   min-height: 100vh;
   max-width: 1240px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -283,23 +295,32 @@ i {
   line-height: 150%;
   max-width: 940px;
   font-size: 25px;
-  text-shadow: 0.1em 0.1em 0.2em #7c6a64;
 }
 .hero h3 {
   text-align: center;
   line-height: 150%;
   max-width: 940px;
   font-size: 25px;
-  text-shadow: 0.1em 0.1em 0.2em #7c6a64;
 }
 .hero .button-contact {
   padding: 14px 28px;
-  color: #7c6a64;
-  background-color: #f4f9f4;
+  color: #f4f9f4;
   border: 0;
   font-size: 20px;
   font-weight: 600;
   margin: 14px 0;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  animation: degrade 10s linear infinite alternate;
+}
+@keyframes degrade {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
 .hero .button-contact:hover {
   animation: scaleButton 0.8s alternate infinite;
@@ -321,13 +342,11 @@ i {
     font-size: 18px;
     padding: 0 14px;
     width: 100%;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
   .hero h3 {
     font-size: 18px;
     padding: 0 14px;
     width: 100%;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
 }
 @media screen and (max-width: 480px) {
@@ -336,11 +355,9 @@ i {
   }
   .hero p {
     font-size: 15px;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
   .hero h3 {
     font-size: 17px;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
 }
 .about {
@@ -350,6 +367,8 @@ i {
   min-height: 50vh;
   padding: 5px 0;
   margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .about-content {
@@ -362,7 +381,6 @@ i {
 .about-content p {
   text-align: center;
   font-size: 20px;
-  text-shadow: 0.1em 0.1em 0.2em #7c6a64;
 }
 .about-content .about-description p {
   margin-bottom: 14px;
@@ -378,7 +396,6 @@ i {
     font-size: 16px;
     margin-bottom: 14px;
     line-height: 150%;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
 }
 @media screen and (max-width: 480px) {
@@ -390,7 +407,6 @@ i {
     font-size: 12px;
     margin-bottom: 4px;
     line-height: 150%;
-    text-shadow: 0.1em 0.1em 0.2em #7c6a64;
   }
 }
 .about-info p {
@@ -450,6 +466,8 @@ i {
   justify-content: center;
   padding: 54px 14px;
   margin-top: -100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .services-content h1 {
@@ -457,9 +475,22 @@ i {
   font-size: 38px;
   text-align: center;
   margin-bottom: 50px;
-  text-shadow: 0em 0em 0.2em #bebebe;
+  background: linear-gradient(45deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite alternate;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 .procedimento-info p {
   color: #f4f9f4;
   text-align: center;
@@ -522,22 +553,21 @@ i {
     font-size: 16px;
   }
 }
-.tratamento {
+.tratamentos {
   background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.12), #030303), url("../assets/bg-tratamento.png");
   color: #f4f9f4;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 54px 14px;
   left: 0;
   top: 0;
-  z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% -130px;
+  background-position: 50% -130px;
   opacity: 0.9;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .tratamento-content h1 {
@@ -617,7 +647,7 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
-  .tratamento {
+  .tratamentos {
     background-image: linear-gradient(to bottom, 8, 8, 8, 0.12, #030303), url("../assets/bg-tratamento-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -643,6 +673,197 @@ i {
     font-size: 17px;
   }
 }
+.wrapper {
+  max-width: 1100px;
+  padding: 20px 10px;
+  margin: 0 60px 35px;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 250px;
+}
+
+.wrapper .card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f9f4;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba black, 0, 0, 0.5;
+  transition: transform 0.3s ease;
+}
+
+.wrapper .card:hover {
+  transform: translateY(-10px);
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  width: 100%;
+  border-radius: 22px;
+  padding: 10px;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-image .card-tag {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  background: linear-gradient(135deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #f4f9f4;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: gradient 10s linear infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+
+.card .card-content .card-title {
+  color: rgb(48, 47, 47);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.card .card-content .card-text {
+  color: #747474;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card .card-content .card-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  margin-top: auto;
+  justify-content: space-between;
+  border-top: 1px solid rgba(124, 106, 100, 0.09);
+}
+
+.card .card-footer .card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-profile img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f4f9f4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-profile .card-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-profile .card-profile-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(48, 47, 47);
+}
+
+.card .card-profile .card-profile-role {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #b1b0ae;
+}
+
+.card .card-footer .card-button {
+  color: #f4f9f4;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.81rem;
+  padding: 10px 10px;
+  box-shadow: 0 8px 15px rgba(10, 10, 10, 0.068);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.card .card-footer .card-button:hover {
+  background-color: #f4f9f4;
+  color: #f4f9f4;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(10, 10, 10, 0.098);
+  z-index: 1;
+}
+
+.wrapper .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.wrapper .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  opacity: 50%;
+  background-color: #f4f9f4;
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next) {
+  color: #bebebe;
+  margin-top: -150px;
+  transition: all 0.3s ease;
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next):hover {
+  color: #f4f9f4;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0 10px 25px;
+    width: 400px;
+  }
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}
 .endereco {
   display: flex;
   align-items: center;
@@ -654,6 +875,8 @@ i {
   margin-top: -250px;
   z-index: 1;
   position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .endereco-info h3 {
@@ -672,8 +895,19 @@ hr.solid {
   background-color: #d5c5bf;
   padding-bottom: 4px;
   margin-bottom: 10px;
+  background: linear-gradient(45deg, #ddbd88, #8c5e2a, #ddbd88);
+  background-size: 400% 100%;
+  animation: degrade 10s linear infinite alternate;
 }
 
+@keyframes degrade {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 .endereco-info h4 {
   font-size: 15px;
   line-height: 100%;
@@ -747,7 +981,6 @@ hr.solid {
   position: relative;
   padding-bottom: 100px;
   overflow: hidden;
-  margin-top: -20px;
 }
 
 .contato img {
@@ -779,7 +1012,7 @@ hr.solid {
 }
 
 .contato i:hover {
-  color: #7c6a64;
+  color: #bebebe;
 }
 
 .navegue {
@@ -818,7 +1051,7 @@ hr.solid {
 }
 
 .navegue ul li a:hover {
-  color: #7c6a64;
+  color: #bebebe;
 }
 
 .agendamento {
