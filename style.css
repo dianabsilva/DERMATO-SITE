@@ -859,6 +859,7 @@ i {
   .wrapper {
     margin: 0 10px 10px;
     width: 350px;
+    justify-content: center;
     overflow: hidden;
   }
   .card .card-footer .card-button {
