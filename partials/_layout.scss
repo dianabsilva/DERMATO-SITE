@@ -688,9 +688,12 @@
 @media screen and (max-width: 768px){
     .wrapper{
         margin: 0 10px 25px;
-        width: 400px;
+        width: 350px;
     }
-
+    .card .card-footer .card-button{
+        font-size: 0.65rem;
+        padding: 15px 10px;
+    }
     .wrapper :where(.swiper-button-prev, .swiper-button-next){
         display: none;
     }
