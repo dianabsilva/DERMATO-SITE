@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -30,9 +31,33 @@
 </head>
 <body>
     <!--HEADER-->
-    <div class="bg-home">
-        <header>
-            <nav class="header-content container">
+    <header>
+        <div class="bg-home">
+            <section class="bottom-header">
+            <div class="interface">
+                <nav>
+                    <ul>
+                        <li><a href="https://clinicajanainaseabra.com.br/" target="_top">INÍCIO</a></li>
+                        <li><a href="./#about">SOBRE A CLÍNICA</a></li>
+                        <li class="drop-hover"><a href="#tratamento">TRATAMENTOS&nbsp; <i class="fa-solid fa-caret-down"></i></a>
+                            <div class="drop">
+                                <a href="./tratamentos.html#intradermocapilar">Intradermocapilar</a>
+                                <a href="./tratamentos.html#escleroterapia">Escleroterapia</a>
+                                <a href="./tratamentos.html#peeling">Peeling Químico</a>
+                                <a href="./tratamentos.html#sinais">Remoção de Sinais</a>
+                                <a href="./tratamentos.html#blefaroplastia">Blefaroplastia</a>
+                                <a href="./tratamentos.html#otoplastia">Otoplastia</a>
+                                <a href="./tratamentos.html#lobuloplastia">Lobuloplastia</a>
+                                <a href="./tratamentos.html#lip-lift">Lip Lift</a>
+                            </div>
+                        </li>
+                        <li><a href="./#endereco">ENDEREÇO</a></li>
+                        <li><a href="./#contato">CONTATO</a></li>
+                    </ul>
+            </div>
+            </nav>
+            </section>
+            <!---<nav class="header-content container">
                 <div class="header-icons" data-aos="fade-down">
                     <a href="https://clinicajanainaseabra.com.br/" target="_top">
                         <i class="fa-solid fa-house fa-2x"></i>
@@ -45,31 +70,32 @@
                         <i class="fa-brands fa-facebook fa-2x"></i>
                     </a> 
 
-                    <!--- <a href="https://www.tiktok.com/@clnica.janana.sea" target="_blank">
+                    <a href="https://www.tiktok.com/@clnica.janana.sea" target="_blank">
                         <i class="fa-brands fa-tiktok fa-2x"></i>
-                    </a> --->
-                </div>
+                    </a> 
+                </div> --->
 
-                <div class="header-logo" data-aos="fade-up" data-aos-delay="400">
+                
+
+                <!---<div data-aos="fade-down">
+                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5581997106629&text=Olá%21+Vim+do+site+e+quero+agendar+uma+consulta" target="_blank">
+                        Entrar em contato
+                    </a>
+                </div>
+            </nav>--->
+            
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+                <div class="header-logo">
                     <img 
                     data-aos="flip-up"
                     data-aos-delay="300"
                     data-aos-duration="1500"
-                        src="assets/logo.svg"
+                        src="assets/logo-branco.svg"
                         alt="Logo da clinica"
                         width="150";
                         height="150";
                     />
                 </div>
-
-                <div data-aos="fade-down">
-                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5581997106629&text=Olá%21+Vim+do+site+e+quero+agendar+uma+consulta" target="_blank">
-                        Entrar em contato
-                    </a>
-                </div>
-            </nav>
-
-            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <p>Transforme sua Pele e sua Saúde com </p>
                     <h3>Tratamentos Dermatológicos Personalizados</h3>
                 <a href="https://api.whatsapp.com/send?phone=5581997106629&text=Olá%21+Vim+do+site+e+quero+agendar+uma+consulta" class="button-contact" target="_blank">
@@ -78,9 +104,11 @@
             </main>
 
         </header>
+        
     </div>
     <!--ABOUT-->
     <section class="about">
+        <div id="about">
         <div class="container about-content">
             <div class="about-description" 
             data-aos="zoom-out-left" data-aos-delay="200">
@@ -116,6 +144,7 @@
         </section>
             </div>
         </div>
+    </div>
     </section>
     <!--SERVICES-->
     <section class="services">
@@ -168,6 +197,7 @@
 
 <!---- TRATAMENTOS-->
 <section class="tratamento">
+    <div id="tratamento"></div>
     <div class="tratamento-content container">
         <h1>Tratamentos e Cirurgias Dermatológicas</h1>
         <p>
@@ -211,64 +241,74 @@
         </a>
     </div>
 </section>
-        <!-- <div class="tratamentos-info">
-            <strong><p>Intradermocapilar</p></strong>
-        </div> 
-
-        <div class="tratamentos-info">
-            <strong><p>Escleroterapia</p></strong>
-        </div>
-
-        <div class="tratamentos-info">
-            <strong><p>Peeling Químico</p></strong>
-        </div>
-
-        <div class="tratamentos-info">
-            <strong><p>Remoção de Sinais</p></strong>
-        </div>
-
-        <div class="tratamentos-info2">
-            <strong><p>Blefaroplastia</p></strong>
-        </div>
-
-        <div class="tratamentos-info2">
-            <strong><p>Otoplastia</p></strong>
-        </div>
-
-        <div class="tratamentos-info2">
-            <strong><p>Lobuloplastia</p></strong>
-        </div>
-
-        <div class="tratamentos-info2">
-            <strong><p>Lip Lift</p></strong>
-        </div> -->
-    
 </section>
 <!---- FOOTER-->
 <div class="footer-container">
-    <div class="endereco">
-        <div class="endereco-info">
-            <h3>Clínica Janaina Seabra</h3>
-            <hr class="solid">
-            <h4><strong>(81) 99710-6629</strong></h4>
-            <h4><strong>clinicajanainaseabra@gmail.com</strong></h4>
-            <p>SALA 105 A</p>
-            <p>EMPRESARIAL MULTMED ILHA CENTER</p>
-            <p>RUA FRANCISCO ALVES, 325 - ILHA DO LEITE</p>
-            <p>RECIFE/PE</p>
-            <p>Próximo ao HOSPITAL ESPERANÇA</p>
-            <p>50070-565</p>
+    <div id="endereco">
+        <div class="endereco">
+            <div class="endereco-info">
+                <h3>Clínica Janaina Seabra</h3>
+                <hr class="solid">
+                <h4><strong>(81) 99710-6629</strong></h4>
+                <h4><strong>clinicajanainaseabra@gmail.com</strong></h4>
+                <p>Sala 105 A</p>
+                <p>Empresarial Multmed Ilha Center</p>
+                <p>R. Francisco Alves, 325 - Ilha do Leite</p>
+                <p>Recife/PE</p>
+                <p>Próximo ao Hospital Esperança</p>
+                <p>50070-565</p>
+            </div>
+            <iframe
+                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3263236256357!2d-34.89564612626945!3d-8.068159880628142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce5ea29029%3A0x8ecb815cff53eb72!2sR.%20Francisco%20Alves%2C%20325%20-%20Ilha%20do%20Leite%2C%20Recife%20-%20PE%2C%2050070-565!5e0!3m2!1spt-BR!2sbr!4v1743008218319!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    <iframe
-        width="100%"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3263236256357!2d-34.89564612626945!3d-8.068159880628142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ce5ea29029%3A0x8ecb815cff53eb72!2sR.%20Francisco%20Alves%2C%20325%20-%20Ilha%20do%20Leite%2C%20Recife%20-%20PE%2C%2050070-565!5e0!3m2!1spt-BR!2sbr!4v1743008218319!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
     </div>
 </div>
 
+<div class ="contato">
+    <div id="contato"></div>
+        <img src="assets/logo-dark.png"
+            alt="Logo da clinica"/>
+        <p><strong> </strong></p>
+        <a href="https://www.instagram.com/clinicajanainaseabra/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        <a href="https://api.whatsapp.com/send?phone=5581997106629&text=Olá%21+Vim+do+site+e+quero+agendar+uma+consulta" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.facebook.com/janaina.amaral.56" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        
+        <a href="https://www.tiktok.com/@clnica.janana.sea" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a> 
+    <div class="navegue">
+        <p><strong>Navegue</strong></p>
+        <ul>
+            <li><a href="https://clinicajanainaseabra.com.br/" target="_top">Início</a></li>
+            <li><a href="./#about">Sobre a Clínica</a></li>
+            <li><a href="./#tratamento">Tratamentos</a></li>
+            <li><a href="./#endereco">Endereço</a></li>
+            <li><a href="./#contato">Contato</a></li>
+        </ul>
+    </div>
+    <div class="agendamento">
+        <p><strong>Agendamentos</strong></p>
+        <ul>
+            <li>Exclusivamente pelo WhatsApp.</li>
+            <li>Agende sua consulta e transforme 
+                sua autoestima!</li>
+        </ul>
+    </div>
+</div>        
+
 <footer class="footer">
     <div class="footer-content container">
-        <p>© 2025 Clínica Janaina Seabra. Todos os direitos reservados.</p>
+        <p>Clínica Janaina Seabra © 2025. Todos os Direitos Reservados.</p>
     </div>
 </footer>
 
