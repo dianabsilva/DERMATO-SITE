@@ -1592,7 +1592,6 @@ hr.solid {
   }
 }
 .content1 {
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1632,15 +1631,21 @@ hr.solid {
     max-width: 100%;
     background-color: #f4f9f4;
   }
+  .content1 h4, .content1 p {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
   .content1 img {
     justify-content: center;
-    max-width: 300px;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     margin-right: 5px;
+    margin-left: 100px;
   }
 }
 .content2 {
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1680,11 +1685,18 @@ hr.solid {
     max-width: 100%;
     background-color: #f4f9f4;
   }
+  .content2 h4, .content2 p {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
   .content2 img {
     justify-content: center;
-    max-width: 300px;
-    height: 100%;
-    margin-left: 5px;
+    width: 50%;
+    height: 50%;
+    margin-right: 5px;
+    margin-left: 100px;
   }
 }
 body {
