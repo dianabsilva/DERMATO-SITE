@@ -243,6 +243,7 @@ i {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 8px;
+  overflow: hidden;
 }
 
 .bg-home {
@@ -998,6 +999,7 @@ hr.solid {
 }
 
 .contato p {
+  overflow: hidden;
   font-size: 15px;
   line-height: 150%;
   text-align: left;
@@ -1202,6 +1204,7 @@ hr.solid {
 }
 
 .treatments-content h1 {
+  overflow: hidden;
   text-transform: uppercase;
   font-size: 38px;
   text-align: center;
@@ -1225,16 +1228,20 @@ hr.solid {
 }
 @media screen and (max-width: 768px) {
   .treatments {
-    margin-top: 0;
+    margin-top: 30px;
     background-color: #f4f9f4;
     background-size: 768px 100%;
     align-items: center;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    overflow: hidden;
   }
   .treatments-content h1 {
     font-size: 33px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 0;
   }
 }
 .intradermocapilar {
@@ -1371,6 +1378,7 @@ hr.solid {
   }
 }
 .button-info {
+  overflow: hidden;
   padding: 14px 28px;
   color: #f4f9f4;
   border: 0;
@@ -1401,6 +1409,12 @@ hr.solid {
   }
   to {
     transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .button-info {
+    margin: 0 0;
+    margin-left: 100px;
   }
 }
 .blefaroplastia {
@@ -1576,6 +1590,7 @@ hr.solid {
   }
 }
 .content1 {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1623,6 +1638,7 @@ hr.solid {
   }
 }
 .content2 {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
