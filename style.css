@@ -1236,6 +1236,8 @@ hr.solid {
     justify-items: center;
     align-items: center;
     overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .treatments-content h1 {
     font-size: 33px;
