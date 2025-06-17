@@ -1097,7 +1097,7 @@ hr.solid {
         
     }
     .treatments-content h1{
-        font-size: 33px;
+        font-size: 25px;
         overflow: hidden;
         margin-right: 10px;
         margin-left: 0;
@@ -1134,7 +1134,7 @@ hr.solid {
         background-color: $white-normal;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1169,7 +1169,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1203,7 +1203,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1237,7 +1237,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1281,8 +1281,10 @@ hr.solid {
 }
 @media screen and (max-width: 768px) {
     .button-info{
-        margin: 0 0;
-        margin-left: 100px;
+        margin: 0;
+        margin-left: 120px;
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
 
@@ -1313,7 +1315,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1347,7 +1349,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1381,7 +1383,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1415,7 +1417,7 @@ hr.solid {
         max-width: 100%;
         img{
             justify-content: center;
-            max-width: 300px;
+            max-width: 200px;
             height: 100%;
             margin-right: 5px;
         }
@@ -1449,18 +1451,24 @@ hr.solid {
 }
 
 @media screen and (max-width: 768px){
+    .treatment-info h3, p{
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     .treatment-info p{
         flex-direction: column;
         margin-top: 0;
         max-width: 100%;
-        font-size: 16px;
-        text-align: center;
+        font-size: 12px;
+        text-align: left;
         margin-right: 5px;
     }
     .treatment-info h3{
         text-align: center;
         justify-content: center;
-        font-size: 25px;
+        font-size: 20px;
         margin-right: 5px;
     }
 }
@@ -1513,10 +1521,21 @@ hr.solid {
             padding-right: 20px;
             text-align: center;
         }
+
+          h4{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 12px;
+            text-align: left;
+        }
+        
         img{
             justify-content: center;
-            width: 50%;
-            height: 50%;
+            width: 200px;
+            height: 150px;
             margin-right: 5px;
             margin-left: 100px;
         }
@@ -1569,12 +1588,20 @@ hr.solid {
             box-sizing: border-box;
             padding-left: 20px;
             padding-right: 20px;
+        }
+        h4{
+            font-size: 20px;
             text-align: center;
+        }
+
+        p{
+            font-size: 12px;
+            text-align: left;
         }
         img{
             justify-content: center;
-            width: 50%;
-            height: 50%;
+            width: 200px;
+            height: 150px;
             margin-right: 5px;
             margin-left: 100px;
         }
@@ -1717,6 +1744,10 @@ hr.solid {
 
    .titulo h2{
     font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
    }
 
    @keyframes linhaAnimada {
