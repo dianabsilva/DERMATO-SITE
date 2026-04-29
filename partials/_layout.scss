@@ -481,6 +481,7 @@
         z-index: -1;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     .tratamentos-info a{
         left: 0;
@@ -688,7 +689,7 @@
 
 @media screen and (max-width: 768px){
     .wrapper{
-        margin: 0 10px 10px;
+        margin: 10px 10px 20px -5px;
         width: 350px;
         justify-content: center;
         overflow: hidden;
@@ -699,6 +700,10 @@
     }
     .wrapper :where(.swiper-button-prev, .swiper-button-next){
         display: none;
+    }
+    .card-text{
+        text-align: start;
+        padding: 10px 10px 10px 0;
     }
 
 }
@@ -946,10 +951,10 @@ hr.solid {
         padding-bottom: 0px;
     }
     .navegue{
-        margin-right: -80px;
+        margin-right: -200px;
     }
     .agendamento{
-        flex-direction: column;
+        flex-direction: center;
         justify-content: center;
         margin-top: -20px;
         padding: 94px 54px;
@@ -960,7 +965,7 @@ hr.solid {
         font-size: 14px;
         margin-top: 5px;
         margin-bottom: -12px;
-        margin-left: 0px;
+        margin-left: -20px;
     }
     .agendamento ul{
         text-align: left;
