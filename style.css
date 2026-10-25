@@ -1129,7 +1129,7 @@ ul { list-style: none; }
   /* Hero — coluna única */
   .hero                { padding: 110px 0 72px; }
   .hero__inner         { grid-template-columns: 1fr; gap: 0; text-align: center; }
-  .hero__visual        { display: none; }
+  .hero__visual        { margin-top: 56px; }
   .hero__eyebrow       { margin-inline: auto; }
   .hero__title         { font-size: clamp(2.2rem, 6vw, 3.2rem); margin-bottom: 20px; }
   .hero__subtitle      { max-width: 540px; margin-inline: auto; }
@@ -1499,4 +1499,47 @@ h3 {
   .services__carousel .carousel-arrow { width: 40px; height: 40px; }
   .services__carousel .carousel-arrow--prev { left: 8px; }
   .services__carousel .carousel-arrow--next { right: 8px; }
+}
+
+
+/* ===== HERO MOBILE: foto da médica + cards flutuantes nas extremidades (não cobrem o rosto) ===== */
+@media (max-width: 900px) {
+  .hero__photo-frame { width: min(100%, 340px); height: auto; aspect-ratio: 4 / 5; }
+  /* Os dois cards descem para a metade inferior da foto, um em cada borda, em alturas diferentes */
+  .hero__badge       { top: auto; bottom: 20px; left: -14px; right: auto; }
+  .hero__badge--2    { top: auto; bottom: 90px; left: auto; right: -14px; }
+}
+@media (max-width: 600px) {
+  .hero__visual      { margin-top: 44px; padding-inline: 10px; }
+  .hero__photo-frame { width: min(100%, 300px); }
+  .hero__badge       { left: -10px; bottom: 16px; padding: 9px 11px; gap: 9px; }
+  .hero__badge--2    { left: auto; right: -10px; top: auto; bottom: 72px; }
+  .hero__badge .badge__icon { width: 30px; height: 30px; font-size: 12px; border-radius: 8px; flex-shrink: 0; }
+  .hero__badge strong { font-size: 0.72rem; }
+  .hero__badge span   { font-size: 0.64rem; }
+}
+@media (max-width: 360px) {
+  .hero__photo-frame { width: min(100%, 250px); }
+  .hero__badge       { left: -6px; bottom: 12px; padding: 8px 9px; }
+  .hero__badge--2    { left: auto; right: -6px; bottom: 66px; }
+}
+
+/* ===== PASSOS (como funciona) em telas menores: setas centralizadas e com respiro dos numerais ===== */
+@media (max-width: 900px) {
+  .step__connector {
+    position: relative;
+    align-self: center;
+    width: 2px; height: 48px;
+    margin: 22px 0;                       /* espaço entre o numeral e a seta, em cima e embaixo */
+  }
+  .step__connector::after {
+    content: '↓';
+    left: 50%; right: auto; top: auto; bottom: -9px;
+    transform: translateX(-50%);          /* seta exatamente no eixo dos numerais */
+    line-height: 1;
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 600px) {
+  .step__connector { height: 40px; margin: 18px 0; }
 }
